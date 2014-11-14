@@ -1,0 +1,38 @@
+{% extends "TroisWABlogBundle::layout.html.twig" %}
+
+{% block title %}
+
+    {{ parent() }}
+
+    -Article
+
+{%  endblock %}
+
+
+{% block content %}
+
+    <h1> Mon premier twig </h1>
+    <h2> C'est trop beau ! </h2>
+
+    <article>
+        {#
+            {{ articleId }}
+        #}
+
+        {% if articleId >25 %}
+            <h3> Pas d'article </h3>
+
+        {% else %}
+            <h3> Article {{ articleId }}</h3>
+
+        {% endif %}
+
+    </article>
+
+{% endblock %}
+
+
+
+
+
+

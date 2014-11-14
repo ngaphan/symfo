@@ -1,0 +1,39 @@
+
+
+# trois_wa_my_first_project_website_homepage:
+#    path:     /hello/{name}
+#    defaults: { _controller: TroisWAMyFirstProjectWebsiteBundle:Default:index }
+
+
+# http://pages.ebay.com/products/baby product
+# dans routing :
+# nom_de_la_route:
+# path: /product/mon product
+# defaluls:{_controller:EbayecommeerceWebsiteBundle:Product:show}
+# _controller : le _pr dire que cette varaible est réservé à symfony
+# chaque path de routing est 1 action
+
+# convention :
+# toutes le smethode de controler qui sont appelé par routing doit fini par __Action().
+# dans ficher ProductController.php , il y aura :
+#
+#   class ProductController
+#   {
+#     public function showAction(){};
+#   }
+# tous est PascalCase : NameSpace,ClassName
+# camelCase : nomVariable , nom methode/function , nom colonne de tab SQL
+# cas particulier :
+# MY_CONSTANT
+# tout ce qui est yml: my_yml_parameter
+# habitude : nom de BDD / de la tab : my_batabase /my_table
+# les requete SQL : INSERT INTO / ADD ...
+
+
+
+hello_mon_petit_chat:
+    path:       /salut/le-chat
+    defaults: {_controller: TroisWAMyFirstProjectWebsiteBundle:Main:hello }
+
+
+    # hello sera appelé entant que helloAction() dans MainController.php

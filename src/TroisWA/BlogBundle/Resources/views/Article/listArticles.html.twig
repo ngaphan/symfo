@@ -1,0 +1,39 @@
+{% extends "TroisWABlogBundle::layout.html.twig" %}
+
+
+{% block title %}
+
+    {{ parent() }}
+
+    -List-Articles
+
+
+{%  endblock %}
+
+
+
+{%  block content  %}
+
+    <h1> Mon List Articles </h1>
+    <h2> C'est aussi beau que le premier ! </h2>
+
+    <article>
+
+        <ul>
+            {% for article in articlesList %}
+                <li>
+                    {{ article.articleTitle }}
+                </li>
+
+            {% else %}
+                <li> Pas d'article </li>
+
+            {% endfor %}
+        </ul>
+
+    </article>
+
+{% endblock %}
+
+
+

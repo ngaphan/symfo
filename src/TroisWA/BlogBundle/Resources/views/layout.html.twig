@@ -1,0 +1,25 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}
+
+    Mon Twig
+
+{%  endblock %}
+
+
+{% block body %}
+
+    <nav>
+        <ul>
+            <li>
+                <a href="{{ path('twa_bb_homepage') }}"> Accueil</a>
+                <a href="{{ path('twa_bb_contact') }}"> Contact</a>
+                <a href="{{ path('twa_bb_articles') }}"> Articles</a>
+            </li>
+        </ul>
+    </nav>
+
+    {%  block content %}{% endblock %}
+
+{% endblock %}
+

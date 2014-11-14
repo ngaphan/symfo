@@ -1,0 +1,18 @@
+twa_bb_homepage:
+    path:     /
+    defaults: {_controller: TroisWABlogBundle:Page:index}
+
+
+twa_bb_articles:
+    path:     /articles
+    defaults: {_controller: TroisWABlogBundle:Article:list}
+
+twa_bb_article:
+    path:     /article/{articleId}
+    defaults: {_controller: TroisWABlogBundle:Article:show}
+    requirements:
+        articleId: \d+
+
+twa_bb_contact:
+    path:     /contact
+    defaults: {_controller: TroisWABlogBundle:Page:contact}
